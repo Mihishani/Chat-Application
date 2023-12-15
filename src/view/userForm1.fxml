@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="846.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.client.UserForm1Controller">
+   <children>
+      <ImageView fitHeight="846.0" fitWidth="600.0">
+         <image>
+            <Image url="@../assets/img/download.jpeg" />
+         </image>
+      </ImageView>
+      <AnchorPane prefHeight="65.0" prefWidth="600.0" style="-fx-background-color: darkCyan;">
+         <children>
+            <Label layoutX="28.0" layoutY="11.0" prefHeight="32.0" prefWidth="123.0" text=" Chat Room" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Button layoutX="404.0" layoutY="12.0" mnemonicParsing="false" onAction="#btnMinimize" prefHeight="42.0" prefWidth="65.0" style="-fx-background-color: transparent;" text=" " />
+            <ImageView fitHeight="32.0" fitWidth="29.0" layoutX="422.0" layoutY="16.0">
+               <image>
+                  <Image url="@../assets/img/minimize.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="512.0" layoutY="5.0" mnemonicParsing="false" onAction="#btnClose" prefHeight="49.0" prefWidth="76.0" style="-fx-background-color: transparent;" text=" " />
+            <ImageView fitHeight="32.0" fitWidth="29.0" layoutX="536.0" layoutY="17.0">
+               <image>
+                  <Image url="@../assets/img/close.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <TextArea fx:id="txtMsgDisplay" layoutX="35.0" layoutY="86.0" prefHeight="661.0" prefWidth="531.0" style="-fx-background-color: blue;" />
+      <TextField fx:id="txtMsgInput" layoutX="35.0" layoutY="764.0" prefHeight="57.0" prefWidth="429.0" style="-fx-border-color: blue;" />
+      <Button layoutX="475.0" layoutY="764.0" mnemonicParsing="false" onAction="#btnSend" prefHeight="57.0" prefWidth="89.0" style="-fx-background-color: Cyan;" text="SEND">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+      <Button layoutX="393.0" layoutY="772.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="65.0" style="-fx-background-color: transparent;" text=" " />
+      <ImageView fitHeight="25.0" fitWidth="29.0" layoutX="411.0" layoutY="780.0">
+         <image>
+            <Image url="@../assets/img/photo-camera.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
